@@ -21,7 +21,8 @@ function checkAge() {
         message = 'Hai più di 18 anni!';
     }
 }
-checkAge();
+// checkAge();
+console.log(checkAge())
 /*
 questo codice è una funzione che ci  vuole dire se la mia  età è minore di 18 anni stampa un messaggio sei troppo giovane
 altrimenti se l' età  è maggiore di 18 anni  ci indica che  hai  piu  di 18 anni,
@@ -34,7 +35,7 @@ volendo possiamo  anche passare gli argomenti come età senza utilizzare la cost
 per renderla riutilizzabile. 
  ESEMPIO : 
  function checkAge(eta) {
-    let message = '';
+    let message = '';      
 
     if (eta < 18) {
         message = `Sei troppo giovane! Hai ${eta} anni!`;
@@ -60,14 +61,12 @@ printColorsNumber();
 
 questa funzione ci indica un array di colori, e un console.log dove ci indica la lista di colori che contiene 
 quell 'array...
-ma ha un errore di sintassi non può essere colors.length perchè non vogliamo sapere la lunghezza dell'array,
-anche perchè  la proprietà .lenght viene utilizzato sostanzialmente  in un ciclo for per determinare la 
-lunghezza dell mio array, 
+ma ha un errore di sintassi non può essere colors.lenght.
 quindi la sintassi corretta è : 
 
 function printColorsNumber() {
     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-    console.log(`Nella mia palette ci sono ${colors} colori!`);
+    console.log(`Nella mia palette ci sono ${colors.length} colori!`);
 }
 printColorsNumber();
 
@@ -219,6 +218,6 @@ l'esercizio ci dice che ha un solo errore ma non è vero,
 }
 checkAccessImproved();
 
-*/
+*/    
 
 
